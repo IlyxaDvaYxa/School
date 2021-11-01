@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,189,148,1) 100%);
+    background-size: cover;
 }
 table{
     width: 100%;
@@ -12,7 +18,8 @@ th, td{
     border: solid  rgb(0, 0, 0);
     color: rgb(158, 65, 161);
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
+    padding: 0 0;
 }
 h1{
     font-family: 'Balsamiq Sans', cursive;
@@ -24,12 +31,11 @@ h1:hover{
     cursor: pointer;
     color: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(195,34,110,1) 0%, rgba(255,183,0,1) 100%);
-    border: 3px solid white;
     font-size: 55px;
     font-weight: 900;
 }
 th:hover{
     background: linear-gradient(0deg, rgba(195,34,110,1) 0%, rgba(255,183,0,1) 100%);
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
 }
