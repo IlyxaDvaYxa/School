@@ -34,7 +34,7 @@ body{
     padding: 0 500px 0 10px;
     text-align: left;
 }
-.First_table_1, .First_table_2, .First_table_3, .First_table_4, .First_table_5, .Second_table_1, .Second_table_2, .Second_table_3, .Second_table_4, .Second_table_5{
+.First_table_1, .First_table_2, .First_table_3, .First_table_4, .First_table_5, .Second_table_1, .Second_table_2, .Second_table_3, .Second_table_4, .Second_table_5, .Second_table_6, .Second_table_7, .Second_table_8{
     background: linear-gradient(45deg, rgba(89,255,233,1) 0%, rgba(0,168,255,1) 100%);
     box-shadow: 0 0 5px rgb(0, 174, 255);
     border-radius: 15px;
@@ -42,7 +42,7 @@ body{
     margin: 30px 20px 20px 20px;
     font-size: 18px;
 }
-.First_table_1:hover, .First_table_2:hover, .First_table_3:hover, .First_table_4:hover, .First_table_5:hover, .Second_table_1:hover, .Second_table_2:hover, .Second_table_3:hover, .Second_table_4:hover, .Second_table_5:hover{
+.First_table_1:hover, .First_table_2:hover, .First_table_3:hover, .First_table_4:hover, .First_table_5:hover, .Second_table_1:hover, .Second_table_2:hover, .Second_table_3:hover, .Second_table_4:hover, .Second_table_5:hover, .Second_table_6:hover, .Second_table_7:hover, .Second_table_8:hover{
     box-shadow: 0 0 9px rgb(4, 138, 247);
 }
 .line{
@@ -80,7 +80,7 @@ span{
 }
 .Second_table{
     width: 280px;
-    height: 480px;
+    height: 700px;
     padding: 20px;
     background: rgb(86, 200, 253);
     border-radius: 50px;
