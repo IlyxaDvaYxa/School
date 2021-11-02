@@ -5,9 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-    color: rgb(99, 179, 165);
+    background-color: rgb(27, 218, 218);
     font-size: 20px;
 }
 .container{
@@ -19,7 +17,7 @@ body{
     width: 280px;
     height: 480px;
     padding: 20px;
-    background-color: rgb(32, 30, 30);
+    background-color: rgb(86, 200, 253);
     border-radius: 50px;
     border: rgb(32, 30, 30);
     width: 100%;
@@ -37,32 +35,33 @@ body{
     text-align: left;
 }
 .First_table_1, .First_table_2, .First_table_3, .First_table_4, .First_table_5, .Second_table_1, .Second_table_2, .Second_table_3, .Second_table_4, .Second_table_5{
-    background-color: rgb(32, 30, 30);
-    box-shadow: 0 0 18px rgb(116, 110, 110);
+    background: linear-gradient(45deg, rgba(89,255,233,1) 0%, rgba(0,168,255,1) 100%);
+    box-shadow: 0 0 5px rgb(0, 174, 255);
     border-radius: 15px;
     padding: 20px 20px 37px 8px;
     margin: 30px 20px 20px 20px;
     font-size: 18px;
 }
 .First_table_1:hover, .First_table_2:hover, .First_table_3:hover, .First_table_4:hover, .First_table_5:hover, .Second_table_1:hover, .Second_table_2:hover, .Second_table_3:hover, .Second_table_4:hover, .Second_table_5:hover{
-    box-shadow: 0 0 9px rgb(116, 110, 110);
+    box-shadow: 0 0 9px rgb(4, 138, 247);
 }
 .line{
     width: 248px;
     height: 1px;
-    background-color: white;
+    background-color: rgb(70, 70, 70);
     margin: 25px 0 23px 0;
 }
 .view{
     text-decoration: none;
-    color: rgb(99, 179, 165);
+    color: rgb(0, 47, 201);
     padding: 5px 2px;
-    border: 2px solid rgb(172, 24, 69);
+    border: 2px solid rgb(0, 47, 201);
     border-radius: 10px;
     margin-left: 2px;
 }
 .view:hover{
-    border: 2px solid rgb(145, 20, 57);
+    border: 2px solid rgb(24, 57, 163);
+    box-shadow: 0 0 3px rgb(24, 57, 163);
 }
 .view:active{
     font-size: 17px;
@@ -77,13 +76,13 @@ span{
     font-size: 14px;
 }
 .First_table:hover{
-    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 36%, rgba(33,33,33,1) 64%, rgba(17,17,17,1) 100%);
+    box-shadow: 0 0 4px rgb(0, 217, 255);
 }
 .Second_table{
     width: 280px;
     height: 480px;
     padding: 20px;
-    background-color: rgb(32, 30, 30);
+    background: rgb(86, 200, 253);
     border-radius: 50px;
     border: rgb(32, 30, 30);
     width: 100%;
@@ -96,7 +95,7 @@ span{
     margin: 30px 0;
 }
 .Second_table:hover{
-    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 36%, rgba(33,33,33,1) 64%, rgba(17,17,17,1) 100%);
+    box-shadow: 0 0 4px rgb(0, 217, 255);
 }
 .header{
     text-align: center;
