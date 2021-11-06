@@ -34,17 +34,24 @@ a{
 }
 .header-menu-list{
     display: flex;
-    
 }
-.header-logo, .header-menu-list{
+.header-logo, .header-menu-items{
     margin-top: 40px;
+}
+.header-logo:hover, .header-menu-items:hover{
+    font-size: 18px;
+    transition: all 0.6s;
+    margin:37px 11.5px 0 11.5px;
+}
+.header-logo, .header-menu-items{
+    transition: all 0.6s;
 }
 .header-main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 325px;
+    margin-top: 320px;
 }
 .header-main > h2{
     font-size: 40px;
@@ -64,6 +71,7 @@ a{
 .header-main > .button:hover{
     background: rgb(255, 255, 255);
     color: rgb(214, 114, 114);
+    transition: all 0.5s;
 }
 .main{
     width: 100%;
@@ -103,6 +111,9 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+.main-view:hover{
+    cursor: pointer;
 }
 .view-item{
     border: 2px solid black;
