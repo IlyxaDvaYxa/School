@@ -41,10 +41,13 @@ textarea{
     margin: 40px 200px;
     border: 2px solid rgb(0, 57, 83);
     border-radius: 20px;background-color: rgba(27,175,151,1);
+    font-size: 20.5px;
 }
 label{
     font-size: 25px;
 }
 .contact{
-    
+    width: 140px;
+    height: 85px;
+    font-size: 21px;
 }
