@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Nvidia{
+    color: rgb(224, 224, 224);
+    padding: 3px;
+    background: rgb(18, 84, 170);
+    border-radius: 40px;
+    text-decoration: none;
+}
