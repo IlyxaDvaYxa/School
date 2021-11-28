@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background:forestgreen;
+    height: 100vh;
+    background: linear-gradient(rgb(228, 59, 29),rgb(3, 109, 230));
     background-size: cover;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;

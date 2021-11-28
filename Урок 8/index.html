@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Урок 8/assets/style.css">
+    <link rel="stylesheet" href="/Урок 8/assets/iconsfontz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Lesson 8</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Lesson 8.Images.Font Awesome.Basic Animation</h1>
+        <h3>Font Awesome + transition</h3>
+        <ul class="transition">
+            <li><div class="marvel-items"><span class="icon-spinner"></span>Marvel</div></li>
+            <li><div class="dc-items"><span class="icon-check-s"></span>DC</div></li>
+            <li><div class="starwars-items"><span class="icon-square"></span>Starwars</div></li>
+        </ul>
+        <h3>Transform and keyframes</h3>
+        <div class="transform">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <h3>CSS Background</h3>
+        <div class="css-background"></div>
+        <h3>Images ( HTML Picture )</h3>
+        <div class="html-picture">
+            <picture>
+                <source srcset="/img/marvel.jpg" type="image/jpeg" media="(min-width:1100px)">
+                <source srcset="/img/dc.jpg" type="image/jpeg" media="(min-width:700px)">
+                <source srcset="/img/starwars.png" type="image/png" media="(max-width:700px)">
+                <img src="/img/marvel.jpg" alt="" class="marvel">
+            </picture>
+        </div>
+        <h3>Universes (HTML object-fit )</h3>
+        <div class="pictures">
+            <div class="starwars">
+                <div class="starwars-img"><img src="/img/starwars.png" alt="" class="images"></div>
+                <p>Здесь кроется картинка с разрешением 300*181</p>
+            </div>
+            <div class="dc">
+                <div class="dc-img"><img src="/img/dc.jpg" alt="" class="images"></div>
+                <p>Здесь кроется картинка с разрешением 700*350</p>
+            </div>
+            <div class="marvel">
+                <div class="marvel-img"><img src="/img/marvel.jpg" alt="" class="images"></div>
+                <p>Здесь кроется картинка с разрешением 1920*1035</p>
+            </div>
+        </div>
+        <h3>Universes in a row</h3>
+        <div class="cards">
+            <div class="marvel-card">
+                <img src="/img/marvel.jpg" alt="" class="card-img">
+                <div class="marvel-text">
+                    <h4><strong>Marvel</strong></h4>
+                    <p>Marvel was started in 1939 by Martin Goodman under a number of corporations and imprints but now known as Timely Comics, and by 1951 had generally become known as Atlas Comics. The Marvel era began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko and many others. The Marvel brand, which had been used over the years, was solidified as the company's primary brand.</p>
+                </div>
+            </div>
+            <div class="dc-card">
+                <img src="/img/dc.jpg" alt="" class="card-img">
+                <div class="dc-text">
+                    <h4><strong>DC</strong></h4>
+                    <p>DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman.</p>
+                </div>
+            </div>
+            <div class="starwars-card">
+                <img src="/img/starwars.png" alt="" class="card-img">
+                <div class="starwars-text">
+                    <h4><strong>Star Wars</strong></h4>
+                    <p>Star Wars was released on May 25, 1977, and first subtitled Episode IV: A New Hope in the 1979 book The Art of Star Wars.Episode V: The Empire Strikes Back was released on May 21, 1980, also achieving wide financial and critical success. The final film in the trilogy, Episode VI: Return of the Jedi was released on May 25, 1983.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
