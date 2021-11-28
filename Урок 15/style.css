@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(96, 155, 1);
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 94, 2);
+    color: rgb(206, 206, 206);
+}
+.My-web > h1{
+    margin: 10px 10px;
+}
+.links{
+    display: flex;
+}
+.links > a{
+    margin: 20px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+.main{
+    margin: 30px;
+    color: rgb(45, 11, 138);
+}
+.left-header > p{
+    margin: 20px 0;
+    font-size: 21px;
+}
+.left-header{
+    margin-bottom: 30px;
+}
