@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ava{
+    height: 40px;
+    width: 40px;
+    margin-right: -15px;
+    border-radius: 30px;
+}
+.file-edit, .future, .comments, .trash{
+    margin-right: 10px;
+}
+.uk-card-footer{
+    padding: 0px;
+}
+.trash{
+    margin-left: 196px;
+    margin-right: 0px;
+}
+h2{
+    margin: 0;
+}
+.uk-card-small{
+    width: 400px;
+}
