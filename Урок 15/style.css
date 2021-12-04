@@ -17,7 +17,7 @@ body{
     color: rgb(206, 206, 206);
 }
 .My-web > h1{
-    margin: 10px 10px;
+    margin: 10px 30px;
 }
 .links{
     display: flex;
@@ -30,7 +30,10 @@ body{
 }
 .main{
     margin: 30px;
-    color: rgb(45, 11, 138);
+    color: rgb(71, 6, 252);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
 }
 .left-header > p{
     margin: 20px 0;
@@ -38,4 +41,32 @@ body{
 }
 .left-header{
     margin-bottom: 30px;
+}
+.main-left{
+    width: 60%;
+    height: 80%;
+}
+.card1, .card2, .card3, .card4, .card5{
+    height: 90%;
+    width: 80%;
+    border:5px solid rgb(10, 94, 2);
+    margin: 20px 20px;
+}
+h3{
+    background-color: rgb(149, 211, 26);
+    font-size: 30px;
+    padding: 10px;
+
+}
+.card1 > p, .card2 > p, .card3 > p, .card4 > p, .card5 > p{
+    padding: 10px;
+    font-size: 22px;
+}
+.cards-inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+}
+.block{
+    height: 90%;
+    width: 50%;
 }
