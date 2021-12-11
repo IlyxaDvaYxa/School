@@ -13,8 +13,10 @@
     margin-right: 10px;
 }
 .uk-card-footer{
-    padding: 0px;
-    margin-top: 0px;
+    background-color: rgb(247, 247, 247);
+}
+.uk-card-small > .uk-card-body {
+    padding: 0 0;
 }
 .trash{
     margin-left: 116px;
@@ -28,7 +30,7 @@ h2{
     height: 270px;
 }
 img:hover{
-    transition: all 0.5s;
+    transition: all 0.3s;
     width: 55px;
     height: 55px;
     z-index: 2;
@@ -40,6 +42,11 @@ img{
     padding: 0;
 }
 .file-edit:hover, .future:hover, .trash:hover, .comments:hover{
-    width: 30px;
-    height: 30px;
+    font-size: 30px;
+}
+.uk-card{
+    padding: 0;
+}
+.uk-margin > .uk-card{
+    margin: 0;
 }
