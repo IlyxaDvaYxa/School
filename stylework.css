@@ -37,6 +37,7 @@ body{
 .First_table_1, .First_table_2, .First_table_3, .First_table_4, .First_table_5, .Second_table_1, .Second_table_2, .Second_table_3, .Second_table_4, .Second_table_5, .Second_table_6, .Second_table_7, .Second_table_8, .Second_table_9, .Second_table_10, .Second_table_11, .Second_table_12, .Second_table_13, .Second_table_14{
     background: linear-gradient(45deg, rgba(89,255,233,1) 0%, rgba(0,168,255,1) 100%);
     box-shadow: 0 0 5px rgb(0, 174, 255);
+    transition: all 0.8s;
     border-radius: 15px;
     padding: 20px 20px 37px 8px;
     margin: 30px 20px 20px 20px;
@@ -44,6 +45,7 @@ body{
 }
 .First_table_1:hover, .First_table_2:hover, .First_table_3:hover, .First_table_4:hover, .First_table_5:hover, .Second_table_1:hover, .Second_table_2:hover, .Second_table_3:hover, .Second_table_4:hover, .Second_table_5:hover, .Second_table_6:hover, .Second_table_7:hover, .Second_table_8:hover, .Second_table_9:hover, .Second_table_10:hover, .Second_table_11:hover, .Second_table_12:hover, .Second_table_13:hover, .Second_table_14:hover{
     box-shadow: 0 0 9px rgb(4, 138, 247);
+    transition: all 1s;
 }
 .line{
     width: 248px;

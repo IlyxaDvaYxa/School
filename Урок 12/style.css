@@ -12,42 +12,62 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 21.5px;
 }
-.form{
-    width: 70%;
-    height: 90%;
-    background: linear-gradient(218deg, rgba(27,175,151,1) 0%, rgba(108,244,131,1) 49%, rgba(255,195,67,1) 100%);
-    border: 2px solid rgb(115, 223, 187);
-    border-radius: 70px;
+.container{
+    width: 900px;
+    height: 700px;
+    background-color: rgb(140, 224, 224);
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.main-left{
+    width: 500px;
+    height: 700px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
-.block-name ,.block-email ,.block-phone ,.text-here{
-    margin: 40px 150px;
+.block-name, .block-phone, .block-email, .text-here, .block-submit{
+    margin: 20px 0;
 }
 input{
-    width: 180px;
-    height: 20px;
-    background-color: rgb(50, 204, 117);
-    border: 1px solid rgb(32, 128, 73);
-}
-textarea{
-    background-color: rgb(50, 204, 117);
-    border: 1px solid rgb(32, 128, 73);
+    background-color: azure;
+    border:3px solid rgb(56, 196, 196);
+    border-radius: 10px;
 }
 .submit{
-    width: 140px;
-    height: 68px;
-    margin: 40px 200px;
-    border: 2px solid rgb(0, 57, 83);
-    border-radius: 20px;background-color: rgba(27,175,151,1);
-    font-size: 20.5px;
+    width: 150px;
+    height: 50px;
 }
-label{
-    font-size: 25px;
+.block-contact{
+    text-align: center;
+    padding-top: 10px;
 }
 .contact{
-    width: 140px;
-    height: 85px;
-    font-size: 21px;
+    width: 200px;
+    height: 70px;
+    border-radius: 60px;
+}
+.form > p{
+    text-align: center;
+}
+.main-right{
+    width: 400px;
+    height: 700px;
+    padding: 180px 0;
+    background-color: rgb(68, 233, 233);
+    border-radius: 40px;
+    border:4px solid rgb(56, 196, 196);
+    text-align: center;
+}
+.main-right > p{
+    margin-top: 60px;
+    font-size: 20px;
+}
+h5{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
 }

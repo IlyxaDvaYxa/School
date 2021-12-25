@@ -5,23 +5,34 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(24, 174, 211);
+    color: azure;
 }
-.header{
+nav{
     width: 100%;
     height: 60px;
-    background-color: cyan;
+    background-color: rgb(8, 144, 197);
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
-.header > ul{
+nav > ul{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.header > li:hover{
+    transition: all 0.4s;
+    background-color: rgb(28, 185, 224);
+}
+.header > li{
+    transition: all 0.4s;
+    padding: 18px;
+}
 .main{
     width: 100%;
     height: 95vh;
-    background-color: rgb(131, 57, 43);
+    background-color: rgb(24, 174, 211);
     display: flex;
     justify-content: center;
 }
@@ -34,12 +45,81 @@ ul{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(246, 255, 255);
 }
-ul ul{
+.ul-1, .ul-1-1, .ul-3, .ul-2{
     display: none;
 }
-ul > li{
+.header > li{
     margin: 5px 15px;
     font-size: 21px;
+}
+.list-1{
+    position: relative;
+}
+.list-1:hover > .ul-1, ul-1 > li:hover{
+    width: 150px;
+    height: 136px;
+    background-color: rgb(8, 144, 197);
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    display: block;
+    padding-top: 10px;
+}
+.ul-1 > li{
+    padding: 7.5px 0;
+    padding-left: 10px;
+    border-bottom:2px solid azure;
+}
+.list-1-1{
+    position: relative;
+}
+.list-1-1:hover > .ul-1-1, ul-1-1 > li:hover{
+    width: 165px;
+    height: 136px;
+    background-color: rgb(8, 144, 197);
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    display: block;
+    padding-top: 10px;
+}
+.ul-1-1 > li{
+    padding: 7.5px 0;
+    padding-left: 10px;
+    border-bottom:2px solid azure;
+}
+.list-2{
+    position: relative;
+}
+.list-2:hover > .ul-2, ul-2 > li:hover{
+    width: 170px;
+    background-color: rgb(8, 144, 197);
+    position: absolute;
+    left: 165px;
+    top: 0px;
+    display: block;
+    
+}
+.ul-2 > li{
+    padding: 7.5px 0;
+    padding-left: 10px;
+    border-bottom:2px solid azure;
+}
+.list-3{
+    position: relative;
+}
+.list-3:hover > .ul-3, ul-3 > li:hover{
+    width: 170px;
+    background-color: rgb(8, 144, 197);
+    position: absolute;
+    left: 170px;
+    top: 0px;
+    display: block;
+}
+.ul-3 > li{
+    padding: 7.5px 0;
+    padding-left: 10px;
+    border-bottom:2px solid azure;
 }
