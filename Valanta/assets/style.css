@@ -165,7 +165,7 @@ i{
 }
 .nav-bar{
     width: 1100px;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -175,19 +175,19 @@ i{
 }
 .hotels{
     width: 60px;
-    height: 50px;
+    height: 60px;
     display: grid;
     grid-template-columns: 95% 1fr;
     grid-template-rows: 1fr;
     margin: 0 25px 0 60px;
 }
 .hotels > i{
-    margin-top: 20px;
+    margin-top: 27px;
     color: rgba(196, 196, 196, 1);
     font-size: 10px;
 }
 .hotels > a{
-    padding-top: 13px;
+    padding-top: 19px;
     color: rgba(23, 23, 23, 0.8);
     font-size: 15px;
     border-bottom:3px solid #DD4053;
@@ -310,7 +310,6 @@ i{
     margin: 0 auto;
     width: 1500px;
     height: 490px;
-    margin-bottom: 30px;
 }
 .carousel-img-1{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/maxresdefault2.jpg);
@@ -375,9 +374,110 @@ h2{
     margin-left: -110px;
 }
 .services{
-    width: 1400px;
-    height: 200px;
+    padding-top: 30px;
+    margin-left: -110px;
+    width: 1530px;
+    background: #F8F8F8;
+}
+.service-inner{
+    width: 1260px;
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    column-gap: 160px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+.mid-text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.service-1 > span{
+    display: flex;
+    font-size: 16px;
+}
+strong > .toop-text{
+    width: 270px;
+    height: 50px;
+    background: #BDBDBD;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 12px;
+    color: #FFFFFF;
+}
+strong > .bot-text{
+    width: 220px;
+    height: 50px;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 12px;
+    color: #969696;
+    border: 1px solid #969696;
+    margin-left: 30px;
+}
+.service-2{
+    height: 220px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10px;
+    column-gap: 30px;
+}
+.icons > i{
+    font-size: 20px;
+    border:2px dashed #969696;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+.text-right{
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.text-right > p{
+    margin-bottom: 3px;
+}
+.txt-right-bottom{
+    margin-top: 5px;
+}
+.best-hotels{
+    margin-top: 100px;
+}
+.header > h2{
+    margin-right: 50px;
+    font-size: 45px;
+    color: #232323;
+}
+.arrow-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    font-size: 40px;
+}
+.arrow-icons > i{
+    width: 50px;
+    height: 50px;
+    color: #454545;
+    border:1px solid #232323;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
