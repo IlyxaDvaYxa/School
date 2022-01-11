@@ -374,6 +374,7 @@ h2{
     margin-left: -110px;
 }
 .services{
+    padding-left: -200px;
     padding-top: 30px;
     margin-left: 110px;
     width: 1260px;
@@ -514,21 +515,52 @@ strong > .bot-text{
     column-gap: 50px;
     margin-left: -90px;
 }
+.hotels-montenegro, .hotels-portonovy, .hotels-naftalan{
+    height: 450px;
+}
 .hotels-img-1{
+    color:#FFFFFF;
     width: 460px;
     height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd\ 1.png);
+    padding-top: 15px;
 }
 .hotels-img-2{
+    color:#FFFFFF;
     width: 460px;
     height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/276398231\ 2.png);
+    padding-top: 15px;
 }
 .hotels-img-3{
+    color:#FFFFFF;
     width: 460px;
     height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/c41c4172\ 1.png);
+    padding-top: 15px;
 }
-.hotels-portonovy{
-    margin-top: 0;
+.hotels-span{
+    width: 200px;
+    height: 50px;
+    text-align: right;
+    font-size: 15px;
+    background: #00000059;
+    padding: 5px;
+    padding-left: 20px;
+}
+.hotels-stars{
+    text-align: center;
+    margin-top: 150px;
+}
+.hotels-stars > i{
+    color: #FFD600;
+    font-size: 19px;
+}
+.hotels-img-1 > p,.hotels-img-2 > p,.hotels-img-3 > p{
+    margin-left: 105px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
 }
