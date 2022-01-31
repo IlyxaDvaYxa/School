@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(252,75,159,1) 0%, rgba(156,121,209,1) 44%, rgba(119,117,231,1) 66%, rgba(0,164,255,1) 100%);
+    background-size: cover;
+}
+table{
+    width: 92%;
+    height: 70vh;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+}
+th, td{
+    font-family: 'Montserrat';
+    border:1px solid  rgb(0, 0, 0);
+    color: rgb(204, 228, 255);
+    text-align: center;
+    font-size: 24px;
+    padding: 0 0;
+    transition: 1s;
+    font-weight: 500;
+}
+h1{
+    font-family: "Montserrat";
+    font-size: 50px;
+    color: rgb(181, 244, 255);
+    text-align: center;
+}
+h1:hover{
+    cursor: pointer;
+    color: rgb(49, 131, 255);
+    background: rgb(255, 233, 233);
+    font-size: 55px;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+th:hover{
+    background: rgb(153, 90, 127);
+    transition: all 0.3s;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: 1.5px solid whitesmoke;
+}

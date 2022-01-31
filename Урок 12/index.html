@@ -7,25 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Урок 12/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_6nui9tJ1O3Y1gnXiLkUun');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_a97fc7w', 'template_rfvuu09', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="/Урок 12/assets/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="main-left">
-            <form action="" class="form">
+            <form action="" class="form" id="contact-form">
+                <input type="hidden" name="contact_number">
                 <h5>Contact us</h5>
                 <div class="block-name">
                     <label>Ім'я: </label>
-                    <input type="text" name="name" placeholder="Ім'я">
+                    <input type="text" name="from_name" placeholder="Ім'я">
                 </div>
                 <div class="block-phone">
                     <label>Номер телофону: </label>
-                    <input type="tel" name="name" placeholder="Номер телофону">
+                    <input type="tel" name="tel" placeholder="Номер телофону">
                 </div>
                 <div class="block-email">
                     <label>Електронна адреса: </label>
-                    <input type="email" name="name" placeholder="Електронна адреса">
+                    <input type="email" name="reply_to" placeholder="Електронна адреса">
                 </div>
                 <div class="text-here">
                     <p><label>Текст: </label></p>

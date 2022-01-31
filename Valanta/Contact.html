@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="/Valanta/assets/Contact style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_6nui9tJ1O3Y1gnXiLkUun');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_a97fc7w', 'template_o7ucy1p', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container-xxl">
+        <div class="header">
+            <img src="/img/7d55533be0d9aa4fb59ca3f3e3008582.png" alt="">
+            <p class="line l1"></p>
+            <div class="leng">
+                <p class="top-text">UA</p>
+                <p class="bot-text">RU</p>
+            </div>
+            <p class="line l2"></p>
+            <div class="money">
+                <p class="top-text">USD 28,90</p>
+                <p>EUR 35,00</p>
+            </div>
+            <p class="line l3"></p>
+            <div class="social-networks">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="line l4"></p>
+            <div class="contact">
+                <div class="numbers">
+                    <strong><p class="top-text">044-537-20-07</p></strong>
+                    <strong><p>068-537-20-07</p></strong>
+                </div>
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <p class="line l5"></p>
+            <div class="maistra-o">
+                <p>Maistra ONLINE</p>
+                <div class="calendar"><i class="far fa-calendar-check"></i></div>
+            </div>
+            <div class="turs-0">
+                <p>ТУРЫ ONLINE</p>
+                <div class="search"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+        <div class="all-w-line"></div>
+        <nav class="nav-bar">
+        <i class="fas fa-search"></i>
+        <div class="hotels">
+            <a href="/Valanta/Main.html">Отели</a>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="countries">
+            <a href="#">Страны</a>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="avia">
+            <a href="#">Авиа</a>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <a href="#" class="catalog-tours">Каталог туров</a>
+        <div class="agents">
+            <a href="#">Агенты</a>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="about-us">
+            <a href="#">О нас</a>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <a href="#" class="blog">Блог</a>
+        <a href="#" class="FAQ">FAQ</a>
+        <a href="/Valanta/Form and contact.html" class="contact">Контакты</a>
+        </nav>
+        <div class="all-w-line-2"></div>
+        <span class="text-1">Главная</span>/<span class="text-2">Контакты</span>
+        <div class="main">
+            <div class="main-left">
+                <h2>контакты</h2>
+                <ul class="adress"><span>Адрес:</span>
+                    <li class="top-li">ул. Леонида Первомайского, 5, офис 13</li>
+                </ul>
+                <ul class="contact-number"><span>Телефон / факс:</span>
+                    <li class="top-li"><strong>044 537 2007</strong> (многоканальный)</li>
+                    <li><strong>068 537 2007</strong> (дежурный)</li>
+                </ul>
+                <ul class="work"><span>Режим работы:</span>
+                    <li class="top-li">Пн-Пт 10:00-19:00</li>
+                </ul>
+            </div>
+            <div class="main-right">
+                <form action="" class="form" id="contact-form">
+                    <input type="hidden" name="contact_number">
+                <h4>Появились вопросы?</h4>
+                <div class="block-name">
+                    <input type="text" name="from_name" placeholder="Имя">
+                </div>
+                <div class="block-phone">
+                    <input type="tel" name="tel" placeholder="Телефон">
+                </div>
+                <div class="block-email">
+                    <input type="email" name="reply_to" placeholder="Email">
+                </div>
+                <div class="comment">
+                    <input type="text" name="text" placeholder="Ваш комментарий">
+                </div>
+                <div class="block-submit">
+                    <input class="submit" type="submit" value="Отправить">
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <img src="/img/ee154eb603 1.png" alt="">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="Our-team">
+            <div class="Our-team-top">
+                <h2>наш колектив</h2>
+                <ul class="team-nav">
+                    <li><a href="#" class="first-li">Все</a></li>
+                    <li><a href="#">Бухгалтерия</a></li>
+                    <li><a href="#">Отдел выездного туризма</a></li>
+                    <li><a href="#" class="last-li">Авиакасса</a></li>
+                </ul>
+            </div>
+            <div class="Our-team-main">
+                <div class="card-1" class="">
+                    <img src="/img/caa5ade0ec 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Менеджер отдела выездного туризма</p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <img src="/img/b620fef46d 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+                <div class="card-3">
+                    <img src="/img/caa5ade0ec 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+                <div class="card-4">
+                    <img src="/img/aebaf84a50 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+                <div class="card-5">
+                    <img src="/img/fd4b766744 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+                <div class="card-6">
+                    <img src="/img/aebaf84a50 1.png" alt="" class="card-img">
+                    <div class="card-text">
+                        <h4>Вера Федорова</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <a href="#">vera@valanta.com.ua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-inner">
+                <div class="bottom-main">
+                    <div class="bottom-main-left">
+                        <img src="/img/7d55533be0d9aa4fb59ca3f3e3008582.png" alt="" width="160" height="90">
+                    </div>
+                    <div class="bottom-main-right">
+                        <ul>
+                            <li><a href="/Valanta/Main.html">Отели</a></li>
+                            <li><a href="#">Страны</a></li>
+                            <li><a href="#">Maistra online</a></li>
+                            <li><a href="#">Туры online</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Агентам</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                        <ul><span>Режим работы</span>
+                            <li><a href="#">Режим работы</a></li>
+                        </ul>
+                        <ul>
+                            <li>+38 (000) 000-00-00</li>
+                            <li>+38 (000) 000-00-00</li>
+                            <li class="bottom-last-li">все контакты</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-bottom">
+                    <p>2002-2021 Туроператор Valanta Travel Company</p>
+                    <div class="social-networks">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
