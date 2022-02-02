@@ -848,7 +848,7 @@ option{
     margin: 0 auto;
 }
 .bottom-main{
-    display: grid;
+    display: grid; 
     grid-template-columns: 30% 1fr;
     grid-template-rows: 1fr;
     width: 100%;
@@ -892,6 +892,10 @@ option{
 }
 .youtube{
     margin-right: 0px;
+}
+ul > span{
+    color: #848484;
+    font-size: 13px;
 }
 ul > span{
     color: #848484;
