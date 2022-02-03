@@ -271,7 +271,7 @@ i{
     color: rgba(23, 23, 23, 0.8);
     font-size: 15px;
 }
-.blog{
+.blog-web{
     width: 40px;
     height: 15px;
     margin: 0 25px 10px 30px;
@@ -493,6 +493,7 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .short-line{
     width: 280px;
@@ -511,10 +512,11 @@ h2{
     font-weight: 600;
     text-decoration: none;
 }
-.hotels-header > a:active, .tours-header > a:active, .news-header > a:active{
+.hotels-header > a:active, .tours-header > a:active, .news-header > a:active, .blog-header > a:active{
     background: rgb(121, 121, 121);
     color: rgb(238, 238, 238);
     transition: all 0.2s;
+    font-weight: 500;
 }
 .hotels-main{
     width: 100%;
@@ -790,6 +792,7 @@ option{
 }
 .news{
     background: #F8F8F8;
+    margin-bottom: 90px;
 }
 .news-header{
     display: flex;
@@ -821,8 +824,86 @@ option{
     font-size: 27px;
 }
 .news-main{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 1fr;
+    width: 1150px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.news-main > .fa-long-arrow-alt-left, .news-main > .fa-long-arrow-alt-right{
+    margin-top: 150px;
+    margin-left: -7px;
+}
+.news-main > .fa-long-arrow-alt-left{
+    margin-right: 20px;
+}
+.news-card{
+    width: 255px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 1fr;
+    padding: 5px;
+    border-right:1px solid #EEEEEE;
+}
+.card-news-4{
+    border: none;
+    padding-right: none;
+}
+.card-news-text{
+    padding-top: 40px;
+    padding-left: 10px;
+}
+.card-news-text > p{
+    opacity: 0.5;
+}
+.card-news-text > a{
+    transition: all 0.15s;
+}
+.card-news-text > a:hover{
+    color: #DD4053;
+    text-decoration: underline;
+}
+.card-news-text > h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.blog{
+    height: 430px;
+    width: 94%;
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    margin-left: 80px;
+    background: rgb(238, 227, 255);
+}
+.blog-header{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+}
+.blog-header > h2{
+    padding-top: none;
+    font-size: 42px;
+    color: #232323;
+    padding-left: 60px;
+}
+.short-line-31{
+    width: 710px;
+    height: 1px;
+    background: #C4C4C4;
+    margin: 20px 22px 10px 50px;
+}
+.blog-header > a{
+    padding: 2px 25px;
+    height: 43px;
+    border:1px solid #969696;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 2px;
+    color: #969696;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 
