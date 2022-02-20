@@ -1,5 +1,106 @@
 .container{
-    width: 600px;
-    height: 600px;
-    border: 3px solid rgb(29, 162, 202);
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgb(9, 91, 184);
+    border-radius: 3px;
+}
+body{
+    background: linear-gradient(180deg, rgba(75,159,252,1) 0%, rgba(78,233,233,1) 50%, rgba(144,255,248,1) 100%);
+    height: 100vh;
+}
+.container-xxl{
+    width: 510px;
+    height: 100vh;
+    margin: 5px auto;
+}
+.new-div{
+    background: rgb(82, 204, 241);
+    border-radius: 5px;
+    margin: 10px 70px;
+    border:1px solid rgb(49, 94, 219);
+    width: 70%;
+    height: 5.5%;
+    color: rgb(255, 252, 242);
+    border-radius: 3px;
+}
+input{
+    background: rgb(236, 254, 255);
+    border: 1px solid rgb(22, 57, 173);
+    border-radius: 4px;
+    height: 15px;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+}
+.input{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    width: 98%;
+    margin: 5px;
+    height: 90px;
+}
+.input-left{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+}
+.input-color{
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    margin-top: 12px;
+    color: rgb(127, 197, 255);
+}
+.container{
+    padding: 0;
+}
+.walking > button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: rgb(82, 204, 241);
+    border:1px solid rgb(49, 94, 219);
+    color: rgb(255, 252, 242);
+    border-radius: 3px;
+}
+.up{
+    top: 300px;
+    right: 300px;
+}
+.right{
+    top: 351px;
+    right: 249px;
+}
+.left{
+    top: 351px;
+    right: 351px;
+}
+.down{
+    top: 403px;
+    right: 300px;
+}
+.clear-button{
+    width: 220px;
+    height: 40px;
+    background: rgb(82, 204, 241);
+    border:1px solid rgb(49, 94, 219);
+    color: rgb(255, 252, 242);
+    position: absolute;
+    top: 473px;
+    right: 214px;
+}
+.checkbox{
+    position: absolute;
+    top: 80px;
+    right: 670px;
+    border: 5px solid blue;
+}
+.checkbox-label{
+    position: absolute;
+    top: 80px;
+    right: 530px;
+}
+button{
+    font-weight: 400;
+    font-size: 15px;
 }

@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,10 +9,20 @@ body{
     font-weight: 500;
 }
 .container-xxl{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
-    background: rgb(255, 255, 255);
     padding: 0;
+    background: rgb(211, 255, 255);
+}
+input:focus{
+    padding: 10px;
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+    transition: all 0.09s;
+    -webkit-box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
+    -moz-box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
+    box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
 }
 a{
     text-decoration: none;
@@ -192,10 +202,13 @@ i{
     font-size: 10px;
 }
 .hotels > a{
+    width: 65px;
     padding-top: 19px;
     color: rgba(23, 23, 23, 0.8);
     font-size: 15px;
     border-bottom:3px solid #DD4053;
+    font-weight: 600;
+    padding-left: 1.5px;
 }
 .countries{
     width: 73px;
@@ -334,6 +347,27 @@ h2{
     border-radius: 2px;
     margin-top: 40px;
     cursor: pointer;
+    transition: all 0.09s;
+}
+.d-none > strong > p:hover{
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
+}
+.d-none > strong > p:active{
+    text-align: center;
+    padding-top:18px;
+    margin-bottom: 123px;
+    width: 270px;
+    height: 60px;
+    background: #ecececfb;
+    border-radius: 2px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: rgb(53, 53, 53);
+    -webkit-box-shadow: 0px 0px 20px 12px rgba(231, 231, 231, 0.2);
+-moz-box-shadow: 0px 0px 20px 12px rgba(231, 231, 231, 0.2);
+box-shadow: 0px 0px 20px 12px rgba(231, 231, 231, 0.2);
 }
 .d-none > h2{
     font-size: 45px;
@@ -373,13 +407,12 @@ h2{
     background: #F8F8F8;
 }
 .service-inner{
-    width: 1060px;
+    width: 1020px;
     height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 160px;
-    margin-top: 30px;
+    column-gap: 120px;
     margin: 0 auto;
 }
 .mid-text{
@@ -399,6 +432,20 @@ h2{
     padding-top: 12px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: all 0.1s;
+}
+.toop-text:active{
+    width: 300px;
+    height: 50px;
+    background: #141414;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 12px;
+    color: #f0f0f0;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 12px 8px rgba(20, 20, 20, 0.2);
+-moz-box-shadow: 0px 0px 12px 8px rgba(20, 20, 20, 0.2);
+box-shadow: 0px 0px 12px 8px rgba(20, 20, 20, 0.2);
 }
 .bot-text{
     width: 220px;
@@ -410,6 +457,23 @@ h2{
     border: 1px solid #969696;
     margin-left: 30px;
     cursor: pointer;
+    transition: all 0.1s;
+}
+.bot-text:active{
+    width: 220px;
+    height: 50px;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 12px;
+    color: #f3f3f3;
+    border: 1px solid #b3b3b3;
+    margin-left: 30px;
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    -webkit-box-shadow: 0px 0px 12px 8px rgba(53, 53, 53, 0.2);
+-moz-box-shadow: 0px 0px 12px 8px rgba(53, 53, 53, 0.2);
+box-shadow: 0px 0px 12px 8px rgba(53, 53, 53, 0.2);
+
 }
 .service-2{
     height: 220px;
@@ -458,7 +522,7 @@ h2{
 .hotels-header{
     display: flex;
     align-items: center;
-    margin-left: 105px;
+    margin-left: 200px;
     margin-bottom: 60px;
 }
 .hotels-header > h2{
@@ -516,7 +580,11 @@ h2{
 .hotels-header > a:active, .tours-header > a:active, .news-header > a:active, .blog-header > a:active{
     background: rgb(121, 121, 121);
     color: rgb(238, 238, 238);
-    transition: all 0.1s;
+    transition: all 0.09s;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 14px 8px rgba(121, 121, 121, 0.2);
+-moz-box-shadow: 0px 0px 14px 8px rgba(121, 121, 121, 0.2);
+box-shadow: 0px 0px 14px 8px rgba(121, 121, 121, 0.2);
 }
 .hotels-main{
     width: 100%;
@@ -531,22 +599,22 @@ h2{
 }
 .hotels-img-1{
     color:#FFFFFF;
-    width: 420px;
-    height: 430px;
+    width: 460px;
+    height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd\ 1.png);
     padding-top: 15px;
 }
 .hotels-img-2{
     color:#FFFFFF;
-    width: 420px;
-    height: 430px;
+    width: 460px;
+    height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/276398231\ 2.png);
     padding-top: 15px;
 }
 .hotels-img-3{
     color:#FFFFFF;
-    width: 420px;
-    height: 430px;
+    width: 460px;
+    height: 450px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(/img/c41c4172\ 1.png);
     padding-top: 15px;
 }
@@ -584,11 +652,10 @@ h2{
 .tours-header{
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 200px;
     margin-bottom: 60px;
 }
 .tours-header > h2{
-    margin-right: 60px;
     font-size: 50px;
     color: #232323;
 }
@@ -596,14 +663,14 @@ h2{
     width: 340px;
     height: 1px;
     background: #C4C4C4;
-    margin: 0 20px 10px 0;
+    margin: 0 26px 10px 50px;
 }
 .tours-main{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 50px 1fr 1fr 1fr 50px;
-    column-gap: 30px;
-    width: 1160px;
+    column-gap: 57px;
+    width: 1260px;
     height: 460px;
     margin: 0 auto;
 }
@@ -626,7 +693,7 @@ h2{
     margin: 0 auto;
 }
 .card-img-1{
-    width: 100%;
+    width: 327px;
     height: 220px;
     background: url(/img/mandarina\ 2.png);
     background-size: cover;
@@ -675,7 +742,7 @@ h2{
 }
 .card-img-2{
     background: url(/img/1491655\ 1.png);
-    width: 100%;
+    width: 327px;
     height: 220px;
     background-size: cover;
     border-radius: 3px;
@@ -684,7 +751,7 @@ h2{
 }
 .card-img-3{
     background: url(/img/276398231\ 2.png);
-    width: 100%;
+    width: 327px;
     height: 220px;
     background-size: cover;
     border-radius: 3px;
@@ -735,7 +802,7 @@ h2{
     width: 1090px;
     height: 140px;
     background: #F8F8F8;
-    margin: 100px 0 110px 130px;
+    margin: 100px 0 110px 200px;
     border-top:6px solid #969696;
     display: flex;
     justify-content: center;
@@ -800,6 +867,9 @@ option{
 }
 .search-button:active{
     background: #9b303d;
+    -webkit-box-shadow: 0px 0px 6px 4px rgba(155, 48, 61, 0.2);
+-moz-box-shadow: 0px 0px 6px 4px rgba(155, 48, 61, 0.2);
+box-shadow: 0px 0px 6px 4px rgba(155, 48, 61, 0.2);;
 }
 .tourists-form{
     width: 130px;
@@ -818,7 +888,7 @@ option{
     display: flex;
     padding-top: 70px;
     padding-bottom: 60px;
-    padding-left: 140px;
+    padding-left: 200px;
 }
 .news-header > h2{
     font-size: 45px;
@@ -847,10 +917,11 @@ option{
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
     grid-template-rows: 1fr;
-    width: 1150px;
+    width: 1200px;
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 80px;
+    column-gap: 28px;
 }
 .news-main > .fa-long-arrow-alt-left, .news-main > .fa-long-arrow-alt-right{
     margin-top: 150px;
@@ -893,10 +964,10 @@ option{
 }
 .blog{
     height: 430px;
-    width: 98%;
+    width: 90%;
     display: grid;
     grid-template-rows: 20% 1fr;
-    margin-left: 31px;
+    margin-left: 110px;
     margin-bottom: 90px;
 }
 .blog-header{
@@ -907,31 +978,33 @@ option{
     padding-top: none;
     font-size: 42px;
     color: #232323;
-    padding-left: 120px;
+    padding-left: 100px;
 }
 .short-line-31{
     width: 710px;
     height: 1px;
     background: #C4C4C4;
-    margin: 20px 22px 10px 50px;
+    margin: 26px 22px 10px 63px;
 }
 .blog-header > a{
-    padding: 2px 25px;
-    height: 43px;
+    width: 160px;
+    height: 45px;
     border:1px solid #969696;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 9.5px;
     border-radius: 2px;
     color: #969696;
     font-weight: 600;
     text-decoration: none;
+    z-index: 10;
 }
 .blog-main{
     height: 320px;
     display: grid;
     grid-template-columns: 60px 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 30px;
+    column-gap: 32px;
+    margin-left: 20px;
 }
 .arrow-icons-1{
     font-size: 27px;
@@ -944,13 +1017,14 @@ option{
     margin-left: 70px;
 }
 .blog-card{
-    width: 270px;
-    height: 340px;
+    width: 290px;
+    height: 350px;
     -webkit-box-shadow: 0px 6px 12px -1px rgba(34, 60, 80, 0.2);
--moz-box-shadow: 0px 6px 12px -1px rgba(34, 60, 80, 0.2);
-box-shadow: 0px 6px 12px -1px rgba(34, 60, 80, 0.2);
-border-radius: 3px;
-}
+    -moz-box-shadow: 0px 6px 12px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 6px 12px -1px rgba(34, 60, 80, 0.2);
+    border-radius: 3px;
+    padding: 10px;
+    }
 .blog-card-text{
     height: 100%;
     margin-top: 15px;
@@ -961,7 +1035,7 @@ border-radius: 3px;
     font-weight: 400;
 }
 .blog-card-4{
-    width: 230px;
+    width: 250px;
 }
 .blog-card-4 > .blog-card-text > p > .fa-eye{
     margin-left: 70px;
@@ -996,6 +1070,7 @@ border-radius: 3px;
     height: 260px;
     color: #EFEFEF;
     border-radius: 3px;
+    padding-left: 50px;
 }
 .subscribe-inner{
     width: 80%;
@@ -1022,10 +1097,17 @@ border-radius: 3px;
     height: 50px;
     margin-right: 70px;
     cursor: white;
+    padding: 10px;
+    transition: all 0.1s;
+}
+.subscribe-main > form > input:hover{
+    -webkit-box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
 }
 .subscribe-main > form > input::-webkit-input-placeholder{
     color: white;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -1039,16 +1121,27 @@ border-radius: 3px;
     font-size: 22px;
     margin-right: 18px;
 }
-.form-button{
+.forma-btn{
     background: #FFFFFF;
     width: 230px;
     height: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
     color: #DA2032;
     border: none;
     border-radius: 3px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.09s;
+    z-index: 10;
+}
+.forma-btn:active{
+    background: #fa2b7a;
+    color: rgb(247, 247, 247);
+    z-index: 10;
+    transition: all 0.09s;
+    -webkit-box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
+    -moz-box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
+    box-shadow: 0px 0px 45px 1px rgba(52, 0, 19, 0.2);
 }
 .recom{
     width: 100%;
@@ -1079,6 +1172,7 @@ border-radius: 3px;
     z-index: 10;
     padding-left: 15px;
     padding-top: 20px;
+    color: #656565;
 }
 .recom-card > i{
     width: 38px;
@@ -1104,6 +1198,232 @@ border-radius: 3px;
 .recom-card-1{
     border-left:6px solid #DD4053;
 }
+.all-width-img{
+    width: 100%;
+    height: 450px;
+    background: url(/img/Rovinj-15\ 1.png);
+    color: #FFFFFF;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.all-width-img > h2{
+    margin-bottom: 30px;
+    width: 500px;
+}
+.all-width-img > button{
+    margin-top: 40px;
+    background: #FFFFFF;
+    color: #969696;
+    width: 270px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.09s;
+}
+.all-width-img > button:active{
+    background: #a8e3ff;
+    color: rgb(49, 49, 49);
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(32, 43, 71, 0.2);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(32, 43, 71, 0.2);
+    box-shadow: 0px 0px 24px 0px rgba(32, 43, 71, 0.2);
+}
+.premium-rest{
+    margin-top: 150px;
+    margin-left: 14%;
+    height: 590px;
+}
+.premium-rest > h4{
+    font-family: "Lobster", sans-serif;
+    color: #DD4053;
+}
+.premium-rest > ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: -35px;
+}
+.first-li-rest{
+    font-size: 31px;
+    width: 700px;
+    height: 73px;
+    margin-bottom: 100px;
+}
+.last-li-rest{
+    margin-top: 30px;
+    color: #DD4053;
+    margin-left: 90px;
+    width: 140px;
+    font-size: 20px;
+}
+.countries-rest{
+    background: #F8F8F8;
+    width: 240px;
+    height: 185px;
+    padding: 8px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+.rest-countries{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.countries-rest > img{
+    margin-top: -50px;
+}
+.countries-rest > h2 {
+    color: #232323;
+    margin-top: -30px;
+    font-size: 20px;
+    margin-left: 75px;
+}
+.chornogoria > h2{
+    margin-left: 50px;
+}
+.italy > h2 {
+    margin-left: 100px;
+}
+.countries-rest > button{
+    border: 2px solid #969696;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0);
+    width: 190px;
+    height: 40px;
+    margin-left: 17px;
+    color: #969696;
+    margin-top: 28px;
+    font-weight: 300;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 14px;
+    transition: all 0.09s;
+}
+.countries-rest > button:active{
+    background: #969696;
+    color: white;
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 20px 4px rgba(150, 150, 150, 0.2);
+}
+.first-li-rest-2{
+    width: 430px;
+    font-size: 17px;
+    margin-right: 115px;
+}
+.first-li-rest-2 > p > a{
+    color: #DD4053;
+    text-decoration: underline;
+}
+.last-li-rest-2 > h2{
+    font-size: 18px;
+    width: 500px;
+    border:1px solid #C4C4C4;
+    padding: 10px;
+    border-radius: 2px;
+}
+.short-line-3{
+    background: #C4C4C4;
+    width: 630px;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.service-VTC{
+    width: 100%;
+    height: 1000px;
+    background: #F8F8F8;
+    padding: 100px 200px;
+    display: grid;
+    grid-template-rows: 50% 1fr;
+}
+.service-VTC-top{
+    display: grid;
+    grid-template-columns: 645px 1fr;
+    column-gap: 45px;
+}
+.service-VTC-top-left{
+    width: 645px;
+    height: 100%;
+}
+.service-VTC-top-left > h2{
+    font-size: 31px;
+    font-weight: 500;
+}
+.service-VTC-top-left > ul{
+    display: grid;
+    width: 610px;
+    grid-template-columns: 50% 45%;
+    column-gap: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #656565;
+    padding-left: 0px;
+}
+.service-VTC-top-right > p{
+    font-family: "Lobster", sans-serif;
+    font-size: 21px;
+    position: absolute;
+    top: 6629px;
+    left: 1207px;
+    z-index: 30;
+    transform: rotate(340deg);
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.service-VTC-bottom{
+    width: 138%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%), url(/img/lake-bled-castle-wedding-1024x768\ 2\ \(1\).png);
+    background-size: cover;
+    margin-left: -195px;
+    padding: 0 200px;
+    margin-top: 16px;
+}
+.service-VTC-bottom > h2{
+    font-size: 20px;
+    width: 447px;
+    margin-bottom: 30px;
+}
+.service-VTC-bottom > ul{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.service-VTC-bottom > ul > li{
+    display: flex;
+    border-bottom:1px solid #E3E3E3;
+    padding: 10px 0;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+.service-VTC-bottom > ul > li:hover{
+    border-bottom:6px solid #DD4053;
+    margin-bottom: -6px;
+}
+.service-VTC-bottom > ul > li > span{
+    margin-right: 20px;
+    color: #96969680;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.service-VTC-bottom > ul > li > p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.li-9{
+    height: 63px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1195,5 +1515,50 @@ ul > span{
     top: 4250px;
     left: 180px;
     z-index: 1;
-    opacity: 0.6;
+}
+.so-img{
+    position: absolute;
+    top: 5360px;
+    left: 800px;
+}
+.frame-71{
+    position: absolute;
+    top: 5667px;
+    left: 1120px;
+}
+.frame-70{
+    position: absolute;
+    top: 5767px;
+    left: 36px;
+}
+.frame-72{
+    position: absolute;
+    top: 6310px;
+    left: 1325px;
+}
+.frame-73{
+    position: absolute;
+    top: 6730px;
+    left: 40px;
+}
+.group-174{
+    position: absolute;
+    top: 6580px;
+    left: 1180px;
+    z-index: 20;
+}
+.group-175{
+    position: absolute;
+    left: 960px;
+    top: 6520px;
+    z-index: 10;
+}
+.mask-Group{
+    position: absolute;
+    top: 6618px;
+    left: 1000px;
+    opacity: 0.9;
+}
+.form-img-1{
+    
 }

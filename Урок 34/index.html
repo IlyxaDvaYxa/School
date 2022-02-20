@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
     <link rel="stylesheet" href="/Урок 34/assets/style.css">
     <title>Document</title>
 </head>
 <body>
-    <label for="">Width</label>
-    <input type="text" class="input-width" name="" id="">
-    <label for="">Height</label>
-    <input type="text" class="input-height" name="" id="">
-    <label for=""></label>
-    <input type="color" class="input-color">
-    <button onclick="createDiv()">Create new Div</button>
-    <div class="container"></div>
-    <script src="/Урок 34/index.js"></script>
+    <div class="container-xxl">
+        <div class="input">
+            <div class="input-left">
+                <label for="">Width:</label>
+                <input type="text" class="input-width" name="" id="">
+                <label for="">Height:</label>
+                <input type="text" class="input-height" name="" id="">
+            </div>
+            <input type="color" class="input-color" value="(32, 155, 236)">
+        </div>
+        <button onclick="createDiv()" class="new-div">Create new Div</button>
+        <div class="container">
+        </div>
+        <div class="walking">
+            <button onclick="moveUp()" class="up">Up</button>
+            <button onclick="moveLeft()" class="left">Left</button>
+            <button onclick="moveRight()" class="right">Right</button>
+            <button onclick="moveDown()" class="down">Down</button>
+        </div>
+        <button onclick="deleteDiv()" class="clear-button">Clear new Div</button>
+        <label for="checkbox" class="checkbox-label">Скруглити кути?</label>
+        <input type="checkbox" class="checkbox">
+        <script src="/Урок 34/index.js"></script>
+    </div>
 </body>
 </html>
